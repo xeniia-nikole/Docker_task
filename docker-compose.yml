@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  dockerApp:
+    build: .
+    environment:
+      TEST_ENV: "myapp"
+    ports:
+      - "8084:8080"
